@@ -1,13 +1,60 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  }
+	"name": "zarish",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build && next build",
+		"build:style": "tailwind build src/styles/index.css -o src/styles/output.css",
+		"start": "next start",
+		"prepare": "husky install",
+		"lint": "eslint --ext ts --ext tsx --fix src/"
+	},
+	"dependencies": {
+		"next": "latest",
+		"react": "17.0.2",
+		"next-seo": "^4.26.0",
+		"react-dom": "17.0.2"
+	},
+	"devDependencies": {
+		"@tailwindcss/aspect-ratio": "^0.2.1",
+		"@tailwindcss/line-clamp": "^0.2.1",
+		"@tailwindcss/typography": "^0.4.1",
+		"@types/node": "^16.4.13",
+		"@types/react": "^17.0.16",
+		"@typescript-eslint/eslint-plugin": "^4.29.0",
+		"@typescript-eslint/parser": "^4.29.0",
+		"autoprefixer": "^10.2.6",
+		"eslint": "^7.32.0",
+		"eslint-config-next": "^11.0.1",
+		"eslint-config-prettier": "^8.3.0",
+		"husky": "^7.0.1",
+		"lint-staged": "^11.1.2",
+		"postcss": "^8.3.5",
+		"prettier": "2.3.2",
+		"tailwindcss": "^2.2.4",
+		"typescript": "^4.3.5"
+	},
+	"lint-staged": {
+		"*.{js,json,md}": [
+			"prettier --write"
+		],
+		"src/**/*.{ts,tsx,md,mdx,js}": [
+			"prettier --write"
+		],
+		"src/**/*.{ts,tsx}": [
+			"npm run lint"
+		]
+	},
+	"prettier": {
+		"singleQuote": true,
+		"semi": false,
+		"printWidth": 100,
+		"jsxBracketSameLine": true,
+		"bracketSpacing": true,
+		"arrowParens": "avoid",
+		"trailingComma": "none",
+		"useTabs": true,
+		"tabWidth": 4
+	}
 }

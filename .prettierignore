@@ -1,0 +1,6 @@
+.next
+build
+public
+package-lock.json
+.gitignore
+src/styles/output.css

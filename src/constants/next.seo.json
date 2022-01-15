@@ -1,0 +1,31 @@
+{
+	"title": "",
+	"titleTemplate": "%s | zarishiqbal.me",
+	"description": "",
+	"additionalMetaTags": [
+		{ "property": "author", "content": "Zarish Iqbal" },
+		{
+			"property": "keywords",
+			"content": ""
+		}
+	],
+	"twitter": {
+		"cardType": "summary_large_image",
+		"handle": "",
+		"site": ""
+	},
+	"openGraph": {
+		"type": "website",
+		"title": "",
+		"description": "",
+		"site_name": "zarishiqbal",
+		"profile": {
+			"firstName": "zarishiqbal"
+		},
+		"images": [
+			{
+				"url": ""
+			}
+		]
+	}
+}
