@@ -1,9 +1,11 @@
 import React, { FunctionComponent } from 'react'
 import { NextSeo } from 'next-seo'
+import MainTab from 'components/main-tab'
 
 type LayoutProps = {
 	meta: any
 	noIndex?: boolean
+	children: React.ReactNode
 }
 
 const DefaultLayout: FunctionComponent<LayoutProps> = ({ children, meta, noIndex = false }) => {
@@ -23,8 +25,13 @@ const DefaultLayout: FunctionComponent<LayoutProps> = ({ children, meta, noIndex
 				}}
 				canonical={url}
 			/>
-			{title && <h1 className="text-2xl leading-tight">{title}</h1>}
-			<main className="max-w-screen-md mx-auto sm:pt-10 pt-4 sm:pb-16 pb-8">{children}</main>
+			<main className="max-w-screen-md mx-auto sm:pt-10 pt-4 sm:pb-16 pb-8">
+				<div className="flex flex-col items-center justify-center min-h-full py-2 font-balsamic">
+					<MainTab />
+
+					{children}
+				</div>
+			</main>
 		</>
 	)
 }

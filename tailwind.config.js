@@ -146,6 +146,10 @@ module.exports = {
 			gridTemplateColumns: {
 				flyoutmenu: 'minmax(0, 1fr) minmax(0, 1fr) 200px'
 			}
+		},
+		fontFamily: {
+			dongle: ['Dongle'],
+			balsamic: ['Balsamiq Sans']
 		}
 	},
 	plugins: [
