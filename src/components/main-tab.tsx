@@ -13,8 +13,8 @@ const MainTab = () => {
 						className={clsx(
 							(router.route.includes(tab) ||
 								(tab === 'home' && router.route == '/')) &&
-								'font-bold',
-							'px-2 py-1 rounded-lg'
+								'font-bold cursor-default',
+							'px-2 py-1 rounded-lg cursor-pointer'
 						)}>
 						{toTitleCase(tab)}
 					</span>
