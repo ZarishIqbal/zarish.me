@@ -1,8 +1,4 @@
 import DefaultLayout from 'layouts'
-import Image from 'next/image'
-import { useRouter } from 'next/router'
-
-import profilePic from '../assets/zarish.jpeg'
 const About = () => {
 	return (
 		<DefaultLayout meta={{ title: 'About Me' }}>

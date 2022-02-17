@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import profilePic from '../assets/profile.jpeg'
+import profilePic from '../../assets/profile.jpeg'
 import { motion } from 'framer-motion'
 import { Eyes } from 'components/eyes'
 import DefaultLayout from 'layouts'

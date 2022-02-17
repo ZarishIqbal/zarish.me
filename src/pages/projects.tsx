@@ -1,13 +1,12 @@
-import novoapka from '../assets/novo.webp'
-import runmatch from '../assets/runmatch.png'
-import scienceBowl from '../assets/science-bowl.svg'
-import ilmx from '../assets/ilmx.png'
-import mis from '../assets/mischool.ico'
+import novoapka from '../../assets/novo.webp'
+import runmatch from '../../assets/runmatch.png'
+import scienceBowl from '../../assets/science-bowl.svg'
+import ilmx from '../../assets/ilmx.png'
+import mis from '../../assets/mischool.ico'
 
-import gy from '../assets/gifting-you-logo.png'
+import gy from '../../assets/gifting-you-logo.png'
 import Image from 'next/image'
 import DefaultLayout from 'layouts'
-import { useRouter } from 'next/router'
 import { Tag } from 'components/tags'
 
 const Projects = () => {

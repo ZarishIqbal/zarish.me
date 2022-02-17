@@ -1,6 +1,6 @@
 import { useSpring, animated } from 'react-spring'
 
-import eye from '../assets/eyeball.png'
+import eye from '../../assets/eyeball.png'
 
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
