@@ -1,18 +1,10 @@
 import Head from 'next/head'
-import { Transition } from '@headlessui/react'
-
 import Image from 'next/image'
 import profilePic from '../assets/profile.jpeg'
 import { motion } from 'framer-motion'
 import { Eyes } from 'components/eyes'
-import { useState, useEffect, Fragment, useReducer } from 'react'
-import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
-import { Carousel } from 'react-responsive-carousel'
-import { useTimeoutFn } from 'react-use'
-import MainTab from 'components/main-tab'
 import DefaultLayout from 'layouts'
 import { useRouter } from 'next/router'
-import { route } from 'next/dist/server/router'
 
 export const IndexPage = () => {
 	const router = useRouter()
