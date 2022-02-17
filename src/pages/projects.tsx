@@ -51,7 +51,9 @@ const Projects = () => {
 					</div>
 				</div>
 
-				<div className="p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
+				<a
+					href="https://mischool.pk"
+					className="cursor-pointer p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
 					<div>
 						<h2 className="text-justify w-full font-semibold my-2 flex items-center flex-wrap">
 							MISchool
@@ -84,9 +86,11 @@ const Projects = () => {
 							<Tag text="Elixir" />
 						</div>
 					</div>
-				</div>
+				</a>
 
-				<div className="p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
+				<a
+					href="https://ilmexchange.com"
+					className="cursor-pointer p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
 					<div>
 						<h2 className="text-justify w-full font-semibold my-2 flex items-center flex-wrap">
 							IlmExchange
@@ -117,9 +121,11 @@ const Projects = () => {
 							<Tag text="Elixir" />
 						</div>
 					</div>
-				</div>
+				</a>
 
-				<div className="p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
+				<a
+					href="https://sciencebowlplatform.com"
+					className="cursor-pointer p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
 					<div>
 						<h2 className="text-justify w-full font-semibold my-2 flex items-center flex-wrap">
 							Science Bowl
@@ -155,7 +161,7 @@ const Projects = () => {
 							<Tag text="Elixir" />
 						</div>
 					</div>
-				</div>
+				</a>
 				<div className="p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
 					<div>
 						<h2 className="text-justify w-full font-semibold flex my-2 flex-wrap ">
@@ -181,20 +187,16 @@ const Projects = () => {
 						</div>
 						<p className="text-justify">
 							A location-based search mobile app that helps its users find a gym
-							companion and suitable gymnasiums. The technologies used was react and
-							react-native with the firebase real-time database.
+							companion and suitable gymnasiums with features like chat, group chat,
+							adding friends, setting meet ups and an android widget for showing
+							coming up meetups
 						</p>
 						<p className="text-justify">
-							Upon signing up, users could search for gyms or gym-buddies upto a
-							radius of 10km. To help users select a gymnasium, each gym had multiple
-							reviews and a star rating. For finding a buddy, user had to go through a
-							vigorous verification process using their National IDs and live photo
+							To help users select a gymnasium, each gym had multiple reviews and a
+							star rating. For finding a buddy, user had to go through a vigorous
+							verification process using their National IDs and live photo
 							verification. These facial-recognition verifications were done using
-							Microsoft azure and Nanonets OCR.
-						</p>
-						<p className="text-justify">
-							The application also had features like chat, group chat, adding friends,
-							setting meet ups and an android widget for showing coming up meetups
+							Microsoft azure.
 						</p>
 						<div className="flex space-x-3 flex-wrap my-3">
 							<Tag text="react native" />
@@ -202,7 +204,9 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
-				<div className="p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 flex  flex-col md:flex-row rounded-2xl shadow-md border border-lightBlue-100 leading-7">
+				<a
+					href="https://play.google.com/store/apps/details?id=com.novoapka&hl=en_US&gl=US"
+					className="cursor-pointer p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 flex  flex-col md:flex-row rounded-2xl shadow-md border border-lightBlue-100 leading-7">
 					<div>
 						<h2 className="text-left font-semibold flex flex-wrap items-center">
 							Novoapka
@@ -245,7 +249,7 @@ const Projects = () => {
 							<Tag text="firebase" />
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 		</DefaultLayout>
 	)
