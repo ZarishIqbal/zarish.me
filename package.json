@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build && next build",
+		"build": "npm run build:style && next build",
 		"build:style": "tailwind build src/styles/index.css -o src/styles/output.css",
 		"start": "next start",
 		"prepare": "husky install",
@@ -13,6 +13,7 @@
 	"dependencies": {
 		"@headlessui/react": "^1.4.3",
 		"@heroicons/react": "^1.0.5",
+		"@netlify/plugin-nextjs": "^4.2.6",
 		"clsx": "^1.1.1",
 		"framer-motion": "^6.0.0",
 		"next": "latest",
