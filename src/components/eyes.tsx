@@ -1,6 +1,6 @@
 import { useSpring, animated } from 'react-spring'
 
-import eye from '../../assets/eyeball.png'
+import eye from 'assets/eyeball.png'
 
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
@@ -30,15 +30,15 @@ export const Eyes = () => {
 
 	return (
 		<div
-			className="flex space-x-5 mt-10 bg-gray-50 p-24 rounded-full border shadow-lg"
+			className="flex space-x-0 md:space-x-5 mt-10 bg-gray-200  p-10 md:p-24 rounded-full border shadow-lg"
 			onMouseMove={handleMouseMove}>
-			<div className="h-60 w-32 rounded-full border-gray-200 border shadow-md">
+			<div className="h-60 w-32 rounded-full border-gray-200 border shadow-md bg-white">
 				<animated.div style={{ transform: props.xy.to(trans) }}>
 					<Image alt="eye-r" className="rounded-full" width={80} height={80} src={eye} />
 				</animated.div>
 			</div>
 
-			<div className="h-60 w-32 rounded-full border-gray-200 border shadow-md md:flex hidden">
+			<div className="h-60 w-32 rounded-full border-gray-200 border shadow-md md:flex hidden bg-white">
 				<animated.div style={{ transform: props.xy.to(trans) }}>
 					<Image alt="eye-r" className="rounded-full" width={80} height={80} src={eye} />
 				</animated.div>

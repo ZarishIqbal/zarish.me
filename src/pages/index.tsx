@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import profilePic from '../../assets/profile.jpeg'
+import profilePic from 'assets/profile.jpeg'
 import { motion } from 'framer-motion'
 import { Eyes } from 'components/eyes'
 import DefaultLayout from 'layouts'
@@ -8,7 +8,6 @@ import { useRouter } from 'next/router'
 
 export const IndexPage = () => {
 	const router = useRouter()
-	console.log(router.route)
 	return (
 		<>
 			<Head>
@@ -17,7 +16,7 @@ export const IndexPage = () => {
 			</Head>
 			<DefaultLayout
 				meta={{ title: 'Home', description: '', url: router.route, ogImage: '' }}>
-				<div className="flex flex-col items-center w-full mt-5 flex-1 px-20 text-center">
+				<div className="p-10 md:p-10 space-y-3  text-gray-600 justify-center bg-lightBlue-50 m-0 md:m-5 rounded-2xl shadow-md border border-lightBlue-100 md:w-full flex flex-col items-center mt-5 flex-1 px-10 md:px-20 text-center">
 					<motion.div
 						initial="hidden"
 						animate="visible"
@@ -61,7 +60,7 @@ export const IndexPage = () => {
 								duration: 3
 							}
 						}}
-						className=" w-full flex mt-5 items-center justify-center">
+						className=" w-full flex mt-5 items-center justify-center ">
 						<Eyes />
 					</motion.div>
 				</div>

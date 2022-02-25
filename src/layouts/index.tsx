@@ -31,14 +31,10 @@ const DefaultLayout: FunctionComponent<LayoutProps> = ({
 				}}
 				canonical={url}
 			/>
-			<main
-				className={clsx(' mx-auto sm:pt-10 pt-4 sm:pb-16 pb-8', {
-					'max-w-screen-md': mini
-				})}>
-				<div className="flex flex-col items-center justify-center min-h-full py-2 ">
+			<main className={clsx('mx-auto sm:pb-16 pb-8')}>
+				<div className="flex flex-col items-center justify-center min-h-full w-full z-0">
 					<MainTab />
-
-					{children}
+					<div className={clsx({ 'max-w-screen-md': mini })}>{children}</div>
 				</div>
 			</main>
 		</>

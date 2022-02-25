@@ -3,7 +3,7 @@ import DefaultLayout from 'layouts'
 const Contact = () => {
 	return (
 		<DefaultLayout meta={{ title: 'Contact Me' }}>
-			<div className="p-10 text-sm md:text-base space-y-3 mt-10 text-gray-600 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7 w-full">
+			<div className="p-10 space-y-3 mt-10 text-gray-600 flex justify-center flex-col bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7 text-left">
 				<h2 className="font-bold text-xl text-left w-full">Reach me at</h2>
 				<ul>
 					<li>

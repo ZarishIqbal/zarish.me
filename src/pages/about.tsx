@@ -2,12 +2,9 @@ import DefaultLayout from 'layouts'
 const About = () => {
 	return (
 		<DefaultLayout meta={{ title: 'About Me' }}>
-			<div className="p-10 space-y-3 mt-10 text-gray-600 flex justify-center flex-col bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7 text-left w-full">
+			<div className="p-10 space-y-3 mt-10 text-gray-600 flex justify-center flex-col bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7 text-left">
 				<h2 className="font-bold text-xl text-left w-full">About Me</h2>
 				<span className="h-auto mt-10 rounded-2xl md:space-x-6 sm:space-x-0 flex w-full md:flex-nowrap flex-wrap ">
-					{/* <div className="md:w-1/3 sm:w-full rounded-md items-center flex justify-center">
-						<Image alt="zarish" src={profilePic} />
-					</div> */}
 					<p className=" text-justify ">
 						I have a bachelor&apos;s degree in Software Engineering from{' '}
 						<a
