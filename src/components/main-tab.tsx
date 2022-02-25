@@ -52,10 +52,11 @@ const MainTab = () => {
 												key={item}
 												href={`/${item == 'home' ? '' : item}`}
 												className={clsx(
-													router.route.includes(item) ||
-														(item === 'home' &&
-															router.route == '/' &&
-															'bg-gray-900 text-white'),
+													{
+														'bg-gray-900 text-white':
+															router.route.includes(item) ||
+															(item === 'home' && router.route == '/')
+													},
 													'text-gray-300 hover:bg-gray-700 hover:text-white',
 													'px-3 py-2 rounded-md text-sm font-medium flex items-center justify-center space-x-2'
 												)}>
