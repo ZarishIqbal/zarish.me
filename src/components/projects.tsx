@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Tag } from './tags'
 
 type ProjectProps = {
@@ -11,7 +12,7 @@ type ProjectProps = {
 	tags: string[]
 	imgHeight?: number
 	imgWidth?: number
-	bg?:string
+	bg?: string
 }
 
 export const Project = ({
@@ -58,11 +59,9 @@ export const Project = ({
 
 	if (link) {
 		return (
-			<a
-				href={link}
-				className="cursor-pointer p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
-				{project}
-			</a>
+			<div className="cursor-pointer p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
+				<Link href={link}>{project}</Link>
+			</div>
 		)
 	}
 	return (

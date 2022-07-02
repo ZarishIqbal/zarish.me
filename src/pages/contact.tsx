@@ -1,5 +1,6 @@
 import DefaultLayout from 'layouts'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Contact = () => {
 	return (
@@ -16,29 +17,14 @@ const Contact = () => {
 						/>
 						<span className="w-64">
 							Github:{' '}
-							<a
-								className="text-blue-500 underline"
-								href="https://github.com/ZarishIqbal">
-								zarishiqbal
-							</a>
+							<Link href="https://github.com/ZarishIqbal">
+								<span className="text-lightBlue-500 cursor-pointer">
+									zarishiqbal
+								</span>
+							</Link>
 						</span>
 					</li>
-					<li className="flex items-center space-x-3">
-						<Image
-							alt="twitter"
-							src="https://img.icons8.com/color/48/000000/twitter--v1.png"
-							width={32}
-							height={32}
-						/>
-						<span className="w-64">
-							Twitter:{' '}
-							<a
-								className="text-blue-500 underline"
-								href="https://twitter.com/ZarishIqbal">
-								@zarishiqbal
-							</a>
-						</span>
-					</li>
+
 					<li className="flex items-center space-x-3">
 						<Image
 							alt="email"
@@ -48,11 +34,11 @@ const Contact = () => {
 						/>
 						<span className="w-64">
 							Email ID:{'   '}
-							<a
-								className="text-blue-500 underline"
-								href="mailto:zarishiqbal.zi@gmail.com">
-								zarishiqbal.zi@gmail.com
-							</a>
+							<Link href="mailto:zarishiqbal.zi@gmail.com">
+								<span className="text-lightBlue-500 cursor-pointer">
+									zarishiqbal.zi@gmail.com
+								</span>
+							</Link>
 						</span>
 					</li>
 				</ul>

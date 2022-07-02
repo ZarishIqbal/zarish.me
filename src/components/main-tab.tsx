@@ -37,37 +37,38 @@ const MainTab = () => {
 								</Disclosure.Button>
 							</div>
 							<div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-								<a href="/" className="flex-shrink-0 flex items-center">
-									<span className="flex md:hidden">
+								<Link href="/">
+									<div className="flex-shrink-0 flex items-center cursor-pointer">
 										<Image alt="logo" width={160} height={30} src={logo} />
-									</span>
-									<span className="hidden md:flex">
-										<Image alt="logo" width={160} height={30} src={logo} />
-									</span>
-								</a>
+									</div>
+								</Link>
 								<div className="hidden sm:block sm:ml-6 w-full">
 									<div className="flex justify-between">
 										{navigation.map(item => (
-											<a
+											<Link
 												key={item}
-												href={`/${item == 'home' ? '' : item}`}
-												className={clsx(
-													{
-														'bg-gray-900 text-white':
-															router.route.includes(item) ||
-															(item === 'home' && router.route == '/')
-													},
-													'text-gray-300 hover:bg-gray-700 hover:text-white',
-													'px-3 py-2 rounded-md text-sm font-medium flex items-center justify-center space-x-2'
-												)}>
-												<Image
-													alt={item}
-													src={icon[item]}
-													width={32}
-													height={32}
-												/>
-												<span>{toTitleCase(item)}</span>
-											</a>
+												href={`/${item == 'home' ? '' : item}`}>
+												<div
+													key={item}
+													className={clsx(
+														{
+															'bg-gray-900 text-white':
+																router.route.includes(item) ||
+																(item === 'home' &&
+																	router.route == '/')
+														},
+														'text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer',
+														'px-3 py-2 rounded-md text-sm font-medium flex items-center justify-center space-x-2'
+													)}>
+													<Image
+														alt={item}
+														src={icon[item]}
+														width={32}
+														height={32}
+													/>
+													<span>{toTitleCase(item)}</span>
+												</div>
+											</Link>
 										))}
 									</div>
 								</div>
@@ -87,7 +88,7 @@ const MainTab = () => {
 											(item === 'home' && router.route == '/')
 											? 'bg-gray-900 text-white'
 											: 'text-gray-300 hover:bg-gray-700 hover:text-white',
-										'px-3 py-2 rounded-md text-sm font-medium flex items-center justify-center space-x-2'
+										'px-3 py-2 rounded-md text-sm font-medium flex items-center justify-center space-x-2 cut'
 									)}>
 									<Image alt={item} src={icon[item]} width={32} height={32} />
 									<span>{toTitleCase(item)}</span>
