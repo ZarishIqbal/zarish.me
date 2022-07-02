@@ -26,7 +26,7 @@ export const projectDetails: ProjectDetails = {
 		heading: 'UVA',
 		typeTags: ['web', 'admin panel'],
 		description:
-			'UVA is an app-based e-hailing service. It is based in Dammam, Saudi Arabia, with operations in UK and Egypt as well. The dashboard is bulit using Angular and node at backend.',
+			'UVA is an app-based e-hailing service. It is based in Dammam, Saudi Arabia, with operations in UK and Egypt as well. The dashboard is built using Angular and node at backend.',
 		tags: ['angular', 'node', 'mySQL'],
 		imgHeight: 120,
 		imgWidth: 350,
@@ -84,7 +84,7 @@ export const projectDetails: ProjectDetails = {
 		heading: 'Novoapka',
 		typeTags: ['web', 'mobile', 'android', 'ios'],
 		description:
-			'An application for Novo Plaza where users collect loyalty points for every purchase in Novo Plaza and exchanges them for collected rewards./nWhen a purchase is made from any one of 100 shops at Novo Plaza, the users scan their reciepts which are then processed by our OCR. The OCR return the points against the total amount user has spent. Using these points, the user can redeem multiple rewards.',
+			'An application for Novo Plaza where users collect loyalty points for every purchase in Novo Plaza and exchanges them for collected rewards./nWhen a purchase is made from any one of 100 shops at Novo Plaza, the users scan their receipts which are then processed by our OCR. The OCR return the points against the total amount user has spent. Using these points, the user can redeem multiple rewards.',
 		tags: ['reactjs', 'react-native', 'typescript', 'firebase'],
 		bg: 'bg-white'
 	}
