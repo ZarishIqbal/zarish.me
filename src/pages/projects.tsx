@@ -4,6 +4,7 @@ import scienceBowl from 'assets/science-bowl.svg'
 import ilmx from 'assets/ilmx.png'
 import mis from 'assets/mischool.ico'
 
+import uva from 'assets/uva-logo.png'
 import gy from 'assets/gifting-you-logo.png'
 import Image from 'next/image'
 import DefaultLayout from 'layouts'
@@ -13,6 +14,37 @@ const Projects = () => {
 	return (
 		<DefaultLayout meta={{ title: 'Project' }} mini={false}>
 			<div className="grid md:grid-cols-3 grid-cols-1">
+
+			<a
+					href="https://uva.sa"
+					className="cursor-pointer p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
+					<div>
+						<h2 className="text-justify w-full font-semibold my-2 flex items-center flex-wrap">
+							UVA
+							<span className="mx-2 bg-gray-200 text-gray-500 font-thin  px-2  rounded-md  font-dongle shadow-md items-center">
+								web
+							</span>
+						</h2>
+						<div className="flex items-center justify-center my-10">
+							<Image
+								alt="uva"
+								src={uva}
+								className="rounded-md m-auto"
+								height={150}
+								width={400}
+							/>
+						</div>
+						<p className="text-justify">
+							UVA is an app-based e-hailing service. It is based in Dammam, Saudi Arabia, with operations in UK and Egypt as well. The dashboard is bulit using Angular and node at backend.
+						</p>
+
+						<div className="flex space-x-3 flex-wrap my-3">
+							<Tag text="angular" />
+							<Tag text="node" />
+							<Tag text="mySQL" />
+						</div>
+					</div>
+				</a>
 				<div className="p-10 space-y-3 mt-10 text-gray-600 bg-lightBlue-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
 					<div>
 						<h2 className="text-justify w-full font-semibold my-2 flex items-center flex-wrap">
