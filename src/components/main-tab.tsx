@@ -37,7 +37,7 @@ const MainTab = () => {
 								</Disclosure.Button>
 							</div>
 							<div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-								<Link href="/">
+								<Link href="/" passHref>
 									<div className="flex-shrink-0 flex items-center cursor-pointer">
 										<Image alt="logo" width={160} height={30} src={logo} />
 									</div>
@@ -46,6 +46,7 @@ const MainTab = () => {
 									<div className="flex justify-between">
 										{navigation.map(item => (
 											<Link
+												passHref
 												key={item}
 												href={`/${item == 'home' ? '' : item}`}>
 												<div

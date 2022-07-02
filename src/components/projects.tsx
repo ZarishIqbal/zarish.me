@@ -27,13 +27,15 @@ export const Project = ({
 	bg
 }: ProjectProps) => {
 	const appType = typeTags.map(tag => (
-		<span className="mx-2 bg-gray-200 text-gray-500 font-thin  px-2  rounded-md  font-dongle shadow-md items-center">
+		<span
+			key={tag}
+			className="mx-2 bg-gray-200 text-gray-500 font-thin  px-2  rounded-md  font-dongle shadow-md items-center">
 			{tag}
 		</span>
 	))
-	const techTags = tags.map(tag => <Tag text={tag} />)
+	const techTags = tags.map(tag => <Tag key={tag} text={tag} />)
 	const project = (
-		<div>
+		<div >
 			<h2 className="text-justify w-full font-semibold my-2 flex items-center flex-wrap">
 				{heading}
 				{appType}

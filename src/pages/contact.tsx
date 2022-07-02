@@ -17,7 +17,7 @@ const Contact = () => {
 						/>
 						<span className="w-64">
 							Github:{' '}
-							<Link href="https://github.com/ZarishIqbal">
+							<Link href="https://github.com/ZarishIqbal" passHref>
 								<span className="text-lightBlue-500 cursor-pointer">
 									zarishiqbal
 								</span>
@@ -34,7 +34,7 @@ const Contact = () => {
 						/>
 						<span className="w-64">
 							Email ID:{'   '}
-							<Link href="mailto:zarishiqbal.zi@gmail.com">
+							<Link href="mailto:zarishiqbal.zi@gmail.com" passHref>
 								<span className="text-lightBlue-500 cursor-pointer">
 									zarishiqbal.zi@gmail.com
 								</span>
