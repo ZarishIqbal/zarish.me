@@ -1,10 +1,12 @@
+import gy from 'assets/gifting-you-logo.png'
+import ilmx from 'assets/ilmx.png'
+import mis from 'assets/mischool.ico'
 import novoapka from 'assets/novo.webp'
 import runmatch from 'assets/runmatch.png'
 import scienceBowl from 'assets/science-bowl.svg'
-import ilmx from 'assets/ilmx.png'
-import mis from 'assets/mischool.ico'
+import shodriver from 'assets/shodriver.svg'
+import syncup from 'assets/syncup.png'
 import uva from 'assets/uva-logo.png'
-import gy from 'assets/gifting-you-logo.png'
 
 type ProjectDetails = {
 	[name: string]: {
@@ -20,6 +22,29 @@ type ProjectDetails = {
 	}
 }
 export const projectDetails: ProjectDetails = {
+	sy: {
+		imgSrc: syncup,
+		heading: 'SyncUp',
+		typeTags: ['ios', 'android'],
+
+		description:
+			'A mobile application used for tracking the menstrual cycle and showing the predictions about the cycle.',
+		tags: ['react native', 'typescript', 'mobx-state-tree'],
+		// imgHeight: 0,
+		imgWidth: 120
+	},
+	shodriver: {
+		link: 'https://shodriver.com',
+		imgSrc: shodriver,
+		heading: 'Shodriver',
+		typeTags: ['web', 'pwa'],
+		description:
+			"An Online service book for managing all of users' vehicle maintenance and repairs. With Shodriver, users can easily book service appointments, track vehicle's service history, and receive reminders for upcoming maintenance.",
+		tags: ['reactjs', 'material UI'],
+		// imgHeight: 120,
+		// imgWidth: 350
+		bg: 'bg-black'
+	},
 	uva: {
 		link: 'https://uva.sa',
 		imgSrc: uva,
@@ -29,8 +54,7 @@ export const projectDetails: ProjectDetails = {
 			'UVA is an app-based e-hailing service. It is based in Dammam, Saudi Arabia, with operations in UK and Egypt as well. The dashboard is built using Angular and node at backend.',
 		tags: ['angular', 'node', 'mySQL'],
 		imgHeight: 120,
-		imgWidth: 350,
-		bg: 'bg-white'
+		imgWidth: 350
 	},
 	gy: {
 		imgSrc: gy,
