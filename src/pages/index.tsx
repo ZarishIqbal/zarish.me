@@ -1,9 +1,10 @@
+import anb from 'assets/anb.png'
+import profile from 'assets/profile.png'
+import { Eyes } from 'components/eyes'
+import { motion } from 'framer-motion'
+import DefaultLayout from 'layouts'
 import Head from 'next/head'
 import Image from 'next/image'
-import profilePic from 'assets/profile.jpeg'
-import { motion } from 'framer-motion'
-import { Eyes } from 'components/eyes'
-import DefaultLayout from 'layouts'
 import { useRouter } from 'next/router'
 
 export const IndexPage = () => {
@@ -38,11 +39,25 @@ export const IndexPage = () => {
 							width={110}
 							height={110}
 							alt="under-construction"
-							src={profilePic}
+							src={profile}
 						/>
 						<div className="">
 							<h1 className="text-lg font-serif">Hello! I&apos;m Zarish Iqbal</h1>
-							<p className="text-gray-400 text-sm">Full Stack Developer</p>
+							<p className="text-black text-sm">
+								<strong>Software Developer at Arab National Bank</strong>
+								<div className="my-4">
+									<Image
+										className="shadow-lg"
+										width={100}
+										height={40}
+										alt="under-construction"
+										src={anb}
+									/>
+								</div>
+								<div className="text-gray-400 text-sm">
+									Outsystems | ReactJS | Typescript | React Native
+								</div>
+							</p>
 						</div>
 					</motion.div>
 					<motion.div

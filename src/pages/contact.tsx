@@ -28,7 +28,7 @@ const Contact = () => {
 					<li className="flex items-center space-x-3">
 						<Image
 							alt="email"
-							src="https://img.icons8.com/external-nawicon-flat-nawicon/64/000000/external-email-communication-nawicon-flat-nawicon-2.png"
+							src="https://img.icons8.com/bubbles/50/null/apple-mail.png"
 							width={32}
 							height={32}
 						/>

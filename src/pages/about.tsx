@@ -1,5 +1,9 @@
+import elixir from 'assets/elixir.png'
+import outsystems from 'assets/outsystems.png'
+
 import DefaultLayout from 'layouts'
-import Link from 'next/link'
+import Image from 'next/image'
+
 const About = () => {
 	return (
 		<DefaultLayout meta={{ title: 'About Me' }}>
@@ -20,26 +24,128 @@ const About = () => {
 				<p className=" text-justify">
 					As a freelancer, I developed react native applications like Novoapka and
 					GiftingYou along with contributing to multiple web and mobile applications.
-					Currently, I am working as a full-stack web developer at{' '}
-					<span className="text-lightBlue-500 cursor-pointer">
-						<Link href="https://innovationlabs.ai/">Innovation Labs.</Link>{' '}
-					</span>
-					Following are the technologies I have worked with:
+					Currently, I am working as a software developer at Arab National Bank. Following
+					are the technologies I have worked with:
 				</p>
-				<div className="grid grid-cols-2">
+				<div className="grid grid-cols-3">
 					<ul>
-						<li>ReactJS</li>
-						<li>AngularJS</li>
-						<li>React Native</li>
-						<li>Typescript</li>
-						<li>Elixir</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/office/16/null/react.png"
+							/>
+							<span className="ml-2">ReactJS</span>
+						</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/color/48/null/angularjs.png"
+							/>
+							<span className="ml-2">AngularJS</span>
+						</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/color/48/null/react-native.png"
+							/>
+							<span className="ml-2">React Native</span>
+						</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/color/48/null/typescript.png"
+							/>
+							<span className="ml-2">Typescript</span>
+						</li>
+						<li>
+							<Image height={15} width={15} src={elixir} />
+							<span className="ml-2">Elixir</span>
+						</li>
 					</ul>
 					<ul>
-						<li>NodeJS & Express </li>
-						<li>Firebase</li>
-						<li>Javascript</li>
-						<li>mySQL</li>
-						<li>Laravel</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/color/48/null/nodejs.png"
+							/>
+							<span className="ml-2">NodeJS & Express</span>
+						</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/color/48/null/firebase.png"
+							/>
+							<span className="ml-2">Firebase</span>
+						</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/color/48/null/javascript--v1.png"
+							/>
+							<span className="ml-2">Javascript</span>
+						</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/fluency/48/null/mysql-logo.png"
+							/>
+							<span className="ml-2">mySQL</span>
+						</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/fluency/48/null/laravel.png"
+							/>
+							<span className="ml-2">Laravel</span>
+						</li>
+					</ul>
+
+					<ul>
+						<li>
+							<Image height={15} width={15} src={outsystems} />
+							<span className="ml-2">Outsystems</span>
+						</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/doodle/48/null/svetle.png"
+							/>
+							<span className="ml-2">Svelte</span>
+						</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/color/48/null/vue-js.png"
+							/>
+							<span className="ml-2">Vue</span>
+						</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/color/48/null/postgreesql.png"
+							/>
+							<span className="ml-2">Postgres</span>
+						</li>
+						<li>
+							<Image
+								height={15}
+								width={15}
+								src="https://img.icons8.com/ios-filled/50/null/git.png"
+							/>
+							<span className="ml-2">Git</span>
+						</li>
 					</ul>
 				</div>
 			</div>

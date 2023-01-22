@@ -6,7 +6,7 @@
 		"dev": "next dev",
 		"build": "npm run build:style && next build",
 		"build:style": "tailwind build src/styles/index.css -o src/styles/output.css",
-		"start": "next start",
+		"start": "next build && next start",
 		"prepare": "husky install",
 		"lint": "eslint --ext ts --ext tsx --fix src/"
 	},
