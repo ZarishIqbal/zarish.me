@@ -35,14 +35,14 @@ export const Project = ({
 	))
 	const techTags = tags.map(tag => <Tag key={tag} text={tag} />)
 	const project = (
-		<div >
+		<div>
 			<h2 className="text-justify w-full font-semibold my-2 flex items-center flex-wrap">
 				{heading}
 				{appType}
 			</h2>
 			<div
 				className={clsx(
-					'flex items-center justify-center my-10 shadow-md p-5 rounded-xl',
+					'flex items-center justify-center my-10 shadow-md p-5 rounded-xl h-56 ',
 					bg ?? 'bg-blue-100 '
 				)}>
 				<Image
