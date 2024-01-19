@@ -1,3 +1,4 @@
+import freqncy from 'assets/freqncy.png'
 import gy from 'assets/gifting-you-logo.png'
 import ilmx from 'assets/ilmx.png'
 import mis from 'assets/mischool.ico'
@@ -5,6 +6,7 @@ import novoapka from 'assets/novo.webp'
 import runmatch from 'assets/runmatch.png'
 import scienceBowl from 'assets/science-bowl.svg'
 import shodriver from 'assets/shodriver.svg'
+import surveysays from 'assets/surveysays.png'
 import syncup from 'assets/syncup.png'
 import uva from 'assets/uva-logo.png'
 
@@ -22,6 +24,29 @@ type ProjectDetails = {
 	}
 }
 export const projectDetails: ProjectDetails = {
+	survey: {
+		link: 'https://www.surveysays.xyz/',
+		imgSrc: surveysays,
+		heading: 'SurveySays',
+		typeTags: ['ReactJS', 'NodeJS'],
+
+		description:
+			'A tool for creating and sharing surveys. It is a full stack application with ReactJS at frontend and NodeJS at backend. ',
+		tags: ['react js', 'typescript', 'aws', 'stripe'],
+		imgHeight: 35,
+		imgWidth: 200
+	},
+	frq: {
+		link: 'https://freqncy.co/',
+		imgSrc: freqncy,
+		heading: 'Freqncy.co',
+		typeTags: ['ReactJS', 'firebase', 'cloud function'],
+
+		description: 'A financial statistical engine— a tool inspired by forensic accountants.',
+		tags: ['react js', 'typescript', 'firebase', 'gcp'],
+		// imgHeight: 0,
+		imgWidth: 150
+	},
 	sy: {
 		imgSrc: syncup,
 		heading: 'SyncUp',
