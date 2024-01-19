@@ -1,23 +1,13 @@
+import clsx from 'clsx'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import toTitleCase from 'utils/toTitleCase'
-import clsx from 'clsx'
 
-import logo from 'assets/logo.png'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Fragment } from 'react'
-import Image from 'next/image'
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 const MainTab = () => {
 	const navigation = ['home', 'about', 'projects', 'contact']
-	const icon = {
-		projects:
-			'https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-code-agile-flaticons-flat-flat-icons.png',
-		home: 'https://img.icons8.com/color/48/000000/home.png',
-		about: 'https://img.icons8.com/external-others-pike-picture/50/000000/external-about-web-design-development-others-pike-picture.png',
-		contact:
-			'https://img.icons8.com/external-nawicon-flat-nawicon/64/000000/external-contact-communication-nawicon-flat-nawicon.png'
-	}
+
 	const router = useRouter()
 	return (
 		<Disclosure as="nav" className="bg-gray-800 w-full z-10">
@@ -37,11 +27,11 @@ const MainTab = () => {
 								</Disclosure.Button>
 							</div>
 							<div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-								<Link href="/" passHref>
+								{/* <Link href="/" passHref>
 									<div className="flex-shrink-0 flex items-center cursor-pointer">
 										<Image alt="logo" width={160} height={30} src={logo} />
 									</div>
-								</Link>
+								</Link> */}
 								<div className="hidden sm:block sm:ml-6 w-full">
 									<div className="flex justify-between">
 										{navigation.map(item => (
@@ -61,12 +51,6 @@ const MainTab = () => {
 														'text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer',
 														'px-3 py-2 rounded-md text-sm font-medium flex items-center justify-center space-x-2'
 													)}>
-													<Image
-														alt={item}
-														src={icon[item]}
-														width={32}
-														height={32}
-													/>
 													<span>{toTitleCase(item)}</span>
 												</div>
 											</Link>
@@ -91,7 +75,6 @@ const MainTab = () => {
 											: 'text-gray-300 hover:bg-gray-700 hover:text-white',
 										'px-3 py-2 rounded-md text-sm font-medium flex items-center justify-center space-x-2 cut'
 									)}>
-									<Image alt={item} src={icon[item]} width={32} height={32} />
 									<span>{toTitleCase(item)}</span>
 								</Disclosure.Button>
 							))}

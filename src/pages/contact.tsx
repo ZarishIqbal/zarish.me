@@ -6,7 +6,7 @@ import { InlineWidget } from 'react-calendly'
 const Contact = () => {
 	return (
 		<DefaultLayout meta={{ title: 'Contact Me' }} full mini={false}>
-			<div className="p-5 space-y-6 md:mt-10 mt-0 text-gray-600 flex justify-center flex-col bg-lightBlue-50 md:m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7 text-left">
+			<div className="p-5 space-y-6 md:mt-10 mt-0 text-gray-600 flex justify-center flex-col bg-purple-50 md:m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7 text-left">
 				<h2 className="font-bold text-xl text-left w-full">Reach me at</h2>
 
 				<div className="flex space-x-7 items-center justify-center">

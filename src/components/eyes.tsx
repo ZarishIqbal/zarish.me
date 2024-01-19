@@ -1,9 +1,8 @@
-import { useSpring, animated } from 'react-spring'
+import { animated, useSpring } from 'react-spring'
 
 import eye from 'assets/eyeball.png'
 
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
 
 const trans = (x, y) => {
 	const calcX = x < 18 ? (x > -18 ? x : -18) : 18

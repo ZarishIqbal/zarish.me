@@ -1,6 +1,6 @@
 import anb from 'assets/anb.png'
 import profile from 'assets/profile.png'
-import { Eyes } from 'components/eyes'
+import upwork from 'assets/upwork.png'
 import { motion } from 'framer-motion'
 import DefaultLayout from 'layouts'
 import Head from 'next/head'
@@ -17,7 +17,7 @@ export const IndexPage = () => {
 			</Head>
 			<DefaultLayout
 				meta={{ title: 'Home', description: '', url: router.route, ogImage: '' }}>
-				<div className="p-10 md:p-10 space-y-3  text-gray-600 justify-center bg-lightBlue-50 m-0 md:m-5 rounded-2xl shadow-md border border-lightBlue-100 md:w-full flex flex-col items-center mt-5 flex-1 px-10 md:px-20 text-center">
+				<div className="p-10 md:p-10 space-y-3  text-gray-600 justify-center bg-purple-50 m-0 md:m-5 rounded-2xl shadow-md border border-lightBlue-100 md:w-full flex flex-col items-center mt-5 flex-1 px-10 md:px-20 text-center">
 					<motion.div
 						initial="hidden"
 						animate="visible"
@@ -57,10 +57,24 @@ export const IndexPage = () => {
 								<div className="text-gray-400 text-sm">
 									Outsystems | ReactJS | Typescript | React Native
 								</div>
+								<div className="text-gray-400 text-sm flex flex-col">
+									Top Rated Freelancer at Upwork, with 100% Job Success.
+									<a
+										href="https://www.upwork.com/freelancers/~01cb198d5185a4ad1e"
+										target="_blank">
+										<Image
+											className="shadow-lg"
+											width={260}
+											height={40}
+											alt="under-construction"
+											src={upwork}
+										/>
+									</a>
+								</div>
 							</p>
 						</div>
 					</motion.div>
-					<motion.div
+					{/* <motion.div
 						transition={{
 							y: {
 								duration: 3,
@@ -77,7 +91,7 @@ export const IndexPage = () => {
 						}}
 						className=" w-full flex mt-5 items-center justify-center ">
 						<Eyes />
-					</motion.div>
+					</motion.div> */}
 				</div>
 			</DefaultLayout>
 		</>
