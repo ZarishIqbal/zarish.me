@@ -1,6 +1,6 @@
-import DefaultLayout from 'layouts'
-import { projectDetails } from 'constants/projects'
-import { Project } from 'components/projects'
+import { Project } from '../components/projects'
+import { projectDetails } from '../constants/projects'
+import DefaultLayout from '../layouts'
 
 const Projects = () => {
 	return (

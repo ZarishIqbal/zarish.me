@@ -1,5 +1,4 @@
 import { Disclosure, Transition } from '@headlessui/react'
-import { ChevronUpIcon } from '@heroicons/react/outline'
 import { useEffect, useState } from 'react'
 import { useTimeoutFn } from 'react-use'
 type TabProps = {
@@ -14,7 +13,7 @@ export const Tab = ({ title, desc, duration }: TabProps) => {
 	useEffect(() => {
 		setIsShowing(false)
 		resetIsShowing()
-	}, [])
+	}, [resetIsShowing])
 
 	return (
 		<Transition

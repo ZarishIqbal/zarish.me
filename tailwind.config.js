@@ -16,7 +16,7 @@ module.exports = {
 		colors: {
 			...defaultTheme.colors,
 			...colors,
-			gray: { ...colors.coolGray, 1000: '#0A0F19' }
+			gray: { ...colors.gray, 1000: '#0A0F19' }
 		},
 		extend: {
 			typography: theme => ({
@@ -152,9 +152,5 @@ module.exports = {
 			balsamic: ['Balsamiq Sans']
 		}
 	},
-	plugins: [
-		require('@tailwindcss/typography'),
-		require('@tailwindcss/aspect-ratio'),
-		require('@tailwindcss/line-clamp')
-	]
+	plugins: [require('@tailwindcss/typography'), require('@tailwindcss/aspect-ratio')]
 }

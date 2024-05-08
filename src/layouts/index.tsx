@@ -1,7 +1,7 @@
 import clsx from 'clsx'
-import MainTab from 'components/main-tab'
 import { NextSeo } from 'next-seo'
 import React, { FunctionComponent } from 'react'
+import MainTab from '../components/main-tab'
 type LayoutProps = {
 	meta: any
 	noIndex?: boolean

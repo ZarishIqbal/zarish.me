@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { Tag } from './tags'
 
 type ProjectProps = {
@@ -28,7 +28,7 @@ export const Project = ({
 	const appType = typeTags.map(tag => (
 		<span
 			key={tag}
-			className="mx-2 bg-gray-200 text-gray-500 font-thin  px-2  rounded-md  font-dongle shadow-md items-center">
+			className="mx-2 bg-gray-200  text-gray-500 font-thin  px-2  rounded-md  font-dongle shadow-md items-center">
 			{tag}
 		</span>
 	))
@@ -60,7 +60,7 @@ export const Project = ({
 
 	if (link) {
 		return (
-			<div className="cursor-pointer p-10 space-y-3 mt-10 text-gray-600 bg-purple-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
+			<div className="cursor-pointer p-10 space-y-3 mt-10 text-gray-600 bg-purple-50 m-5 rounded-2xl shadow-md border border-sky-100 leading-7">
 				<a target="_blank" href={link}>
 					{project}
 				</a>
@@ -68,7 +68,7 @@ export const Project = ({
 		)
 	}
 	return (
-		<div className="p-10 space-y-3 mt-10 text-gray-600 bg-purple-50 m-5 rounded-2xl shadow-md border border-lightBlue-100 leading-7">
+		<div className="p-10 space-y-3 mt-10 text-gray-600 bg-purple-50 m-5 rounded-2xl shadow-md border border-sky-100 leading-7">
 			{project}
 		</div>
 	)
